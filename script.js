@@ -1,12 +1,12 @@
 'use strict';
 
 const secret = Math.trunc(Math.random() * 20) + 1;
-document.querySelector('.number').textContent = secret;
+document.querySelector('.number').textContent;
 
 let score = 20;
 let highScore = 0;
 const displayMessage= function(message){
-    document.querySelector('.message').textContent =message;
+    document.querySelector('.message').textContent = message;
 }
 
 
@@ -37,7 +37,6 @@ document.querySelector('.check').addEventListener('click', function () {
         displayMessage('you lost');
     }
   }
-
 });
 
 document.querySelector('.again').addEventListener('click',function(){
